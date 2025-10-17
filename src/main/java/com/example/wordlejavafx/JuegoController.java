@@ -116,15 +116,21 @@ public class JuegoController {
 
             tableroLetras[filaActual][i].setText(String.valueOf(letraUsuario));
 
+            Color colorTeclado = null;
+
             if(letraSecreta == letraUsuario){
                 tablero[filaActual][i].setFill(Color.GREEN);
-
+                colorTeclado = Color.GREEN;
             } else if (palabraSecreta.contains(String.valueOf(letraUsuario))) {
                 tablero[filaActual][i].setFill(Color.GOLD);
+                colorTeclado = Color.GOLD;
 
             } else if (letraSecreta != letraUsuario) {
                 tablero[filaActual][i].setFill(Color.GREY);
+                colorTeclado = Color.GREY;
             }
+
+            coloresTeclado(letraUsuario,colorTeclado);
         }
 
         filaActual++;
