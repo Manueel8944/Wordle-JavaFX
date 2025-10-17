@@ -21,7 +21,7 @@
                <font>
                   <Font name="System Bold Italic" size="30.0" />
                </font></Button>
-            <Button id="botonGithub" mnemonicParsing="false" prefHeight="75.0" prefWidth="406.0" text="GitHub">
+            <Button id="botonGithub" mnemonicParsing="false" prefHeight="75.0" prefWidth="406.0" text="GitHub" onAction="#urlGithub">
                <font>
                   <Font name="System Bold Italic" size="30.0" />
                </font></Button>

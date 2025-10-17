@@ -9,6 +9,9 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import javafx.event.ActionEvent;
+import java.awt.Desktop;
+import java.net.URI;
+import java.awt.*;
 import java.io.IOException;
 
 public class MainController {
@@ -27,5 +30,13 @@ public class MainController {
         stage.setScene(scene);
         stage.setTitle("Juego");
         stage.show();
+    }
+
+    public void urlGithub() {
+        try {
+            Desktop.getDesktop().browse(new URI("https://github.com/Manueel8944"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
