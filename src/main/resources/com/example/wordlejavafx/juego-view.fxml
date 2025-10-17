@@ -12,6 +12,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wordlejavafx.JuegoController">
    <children>
       <VBox layoutX="296.0" layoutY="18.0" prefHeight="1038.0" prefWidth="1348.0" spacing="90.0" alignment="TOP_CENTER">
@@ -24,79 +27,81 @@
              </ImageView>
 
              <GridPane hgap="5" vgap="5" alignment="CENTER">
-                 <Rectangle fx:id="r00" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
-                 <Rectangle fx:id="r01" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
-                 <Rectangle fx:id="r02" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
-                 <Rectangle fx:id="r03" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
-                 <Rectangle fx:id="r04" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
 
-                 <Rectangle fx:id="r10" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-                 <Rectangle fx:id="r11" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
-                 <Rectangle fx:id="r12" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
-                 <Rectangle fx:id="r13" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
-                 <Rectangle fx:id="r14" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="1" GridPane.columnIndex="4"/>
+                 <StackPane GridPane.rowIndex="0" GridPane.columnIndex="0"><Rectangle fx:id="r00" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l00" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="0" GridPane.columnIndex="1"><Rectangle fx:id="r01" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l01" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="0" GridPane.columnIndex="2"><Rectangle fx:id="r02" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l02" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="0" GridPane.columnIndex="3"><Rectangle fx:id="r03" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l03" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="0" GridPane.columnIndex="4"><Rectangle fx:id="r04" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l04" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
 
-                 <Rectangle fx:id="r20" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
-                 <Rectangle fx:id="r21" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
-                 <Rectangle fx:id="r22" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
-                 <Rectangle fx:id="r23" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
-                 <Rectangle fx:id="r24" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="2" GridPane.columnIndex="4"/>
+                 <StackPane GridPane.rowIndex="1" GridPane.columnIndex="0"><Rectangle fx:id="r10" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l10" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="1" GridPane.columnIndex="1"><Rectangle fx:id="r11" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l11" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="1" GridPane.columnIndex="2"><Rectangle fx:id="r12" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l12" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="1" GridPane.columnIndex="3"><Rectangle fx:id="r13" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l13" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="1" GridPane.columnIndex="4"><Rectangle fx:id="r14" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l14" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
 
-                 <Rectangle fx:id="r30" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
-                 <Rectangle fx:id="r31" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
-                 <Rectangle fx:id="r32" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
-                 <Rectangle fx:id="r33" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
-                 <Rectangle fx:id="r34" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="3" GridPane.columnIndex="4"/>
+                 <StackPane GridPane.rowIndex="2" GridPane.columnIndex="0"><Rectangle fx:id="r20" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l20" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="2" GridPane.columnIndex="1"><Rectangle fx:id="r21" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l21" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="2" GridPane.columnIndex="2"><Rectangle fx:id="r22" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l22" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="2" GridPane.columnIndex="3"><Rectangle fx:id="r23" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l23" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="2" GridPane.columnIndex="4"><Rectangle fx:id="r24" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l24" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
 
-                 <Rectangle fx:id="r40" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
-                 <Rectangle fx:id="r41" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
-                 <Rectangle fx:id="r42" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
-                 <Rectangle fx:id="r43" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
-                 <Rectangle fx:id="r44" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="4" GridPane.columnIndex="4"/>
+                 <StackPane GridPane.rowIndex="3" GridPane.columnIndex="0"><Rectangle fx:id="r30" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l30" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="3" GridPane.columnIndex="1"><Rectangle fx:id="r31" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l31" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="3" GridPane.columnIndex="2"><Rectangle fx:id="r32" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l32" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="3" GridPane.columnIndex="3"><Rectangle fx:id="r33" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l33" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="3" GridPane.columnIndex="4"><Rectangle fx:id="r34" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l34" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
 
-                 <Rectangle fx:id="r50" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
-                 <Rectangle fx:id="r51" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
-                 <Rectangle fx:id="r52" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
-                 <Rectangle fx:id="r53" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="5" GridPane.columnIndex="3"/>
-                 <Rectangle fx:id="r54" width="70" height="70" stroke="BLACK" fill="#D3D3D3" GridPane.rowIndex="5" GridPane.columnIndex="4"/>
+                 <StackPane GridPane.rowIndex="4" GridPane.columnIndex="0"><Rectangle fx:id="r40" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l40" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="4" GridPane.columnIndex="1"><Rectangle fx:id="r41" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l41" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="4" GridPane.columnIndex="2"><Rectangle fx:id="r42" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l42" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="4" GridPane.columnIndex="3"><Rectangle fx:id="r43" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l43" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="4" GridPane.columnIndex="4"><Rectangle fx:id="r44" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l44" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+
+                 <StackPane GridPane.rowIndex="5" GridPane.columnIndex="0"><Rectangle fx:id="r50" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l50" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="5" GridPane.columnIndex="1"><Rectangle fx:id="r51" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l51" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="5" GridPane.columnIndex="2"><Rectangle fx:id="r52" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l52" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="5" GridPane.columnIndex="3"><Rectangle fx:id="r53" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l53" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+                 <StackPane GridPane.rowIndex="5" GridPane.columnIndex="4"><Rectangle fx:id="r54" width="70" height="70" fill="#D3D3D3" stroke="BLACK"/><Label fx:id="l54" text="" style="-fx-font-size: 24px; -fx-font-weight: bold;"/></StackPane>
+
              </GridPane>
 
-             <TextField fx:id="palabra" maxWidth="100" prefWidth="40" promptText="Ingrese la palabra"/>
+             <TextField fx:id="palabra" maxWidth="120" prefWidth="80" promptText="Ingrese la palabra" style="-fx-padding: 10"/>
 
              <GridPane xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1"
                        hgap="5" vgap="5" alignment="CENTER">
 
-                 <Button text="A" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
-                 <Button text="B" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
-                 <Button text="C" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
-                 <Button text="D" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
-                 <Button text="E" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
-                 <Button text="F" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="5"/>
-                 <Button text="G" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="6"/>
-                 <Button text="H" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="7"/>
-                 <Button text="I" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="8"/>
-                 <Button text="J" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="9"/>
+                 <Button fx:id="btnA" text="A" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                 <Button fx:id="btnB" text="B" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                 <Button fx:id="btnC" text="C" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                 <Button fx:id="btnD" text="D" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+                 <Button fx:id="btnE" text="E" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
+                 <Button fx:id="btnF" text="F" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="5"/>
+                 <Button fx:id="btnG" text="G" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="6"/>
+                 <Button fx:id="btnH" text="H" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="7"/>
+                 <Button fx:id="btnI" text="I" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="8"/>
+                 <Button fx:id="btnJ" text="J" prefWidth="55" prefHeight="55" GridPane.rowIndex="0" GridPane.columnIndex="9"/>
 
-                 <Button text="K" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-                 <Button text="L" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
-                 <Button text="M" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
-                 <Button text="N" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
-                 <Button text="Ñ" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="4"/>
-                 <Button text="O" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="5"/>
-                 <Button text="P" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="6"/>
-                 <Button text="Q" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="7"/>
-                 <Button text="R" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="8"/>
-                 <Button text="S" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="9"/>
+                 <Button fx:id="btnK" text="K" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                 <Button fx:id="btnL" text="L" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                 <Button fx:id="btnM" text="M" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+                 <Button fx:id="btnN" text="N" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+                 <Button fx:id="btnÑ" text="Ñ" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="4"/>
+                 <Button fx:id="btnO" text="O" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="5"/>
+                 <Button fx:id="btnP" text="P" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="6"/>
+                 <Button fx:id="btnQ" text="Q" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="7"/>
+                 <Button fx:id="btnR" text="R" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="8"/>
+                 <Button fx:id="btnS" text="S" prefWidth="55" prefHeight="55" GridPane.rowIndex="1" GridPane.columnIndex="9"/>
 
-                 <Button text="T" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
-                 <Button text="U" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
-                 <Button text="V" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
-                 <Button text="W" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
-                 <Button text="X" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="4"/>
-                 <Button text="Y" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="5"/>
-                 <Button text="Z" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="6"/>
-                 <Button text="Borrar" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="7" style="-fx-background-color: #FF694A; -fx-border-color: black;-fx-font-weight: bold"/>
-                 <Button text="Enter" prefWidth="105" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="8" GridPane.columnSpan="2" style="-fx-background-color: #9AFF99; -fx-border-color: black;-fx-font-weight: bold"/>
+                 <Button fx:id="btnT" text="T" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                 <Button fx:id="btnU" text="U" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                 <Button fx:id="btnV" text="V" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+                 <Button fx:id="btnW" text="W" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+                 <Button fx:id="btnX" text="X" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="4"/>
+                 <Button fx:id="btnY" text="Y" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="5"/>
+                 <Button fx:id="btnZ" text="Z" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="6"/>
+                 <Button fx:id="botonBorrar" onAction="#borrarPalabra" text="Borrar" prefWidth="55" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="7" style="-fx-background-color: #FF694A; -fx-border-color: black;-fx-font-weight: bold; -fx-border-radius: 3"/>
+                 <Button fx:id="botonEnter" onAction="#agregarPalabra" text="Enter" prefWidth="115" prefHeight="55" GridPane.rowIndex="2" GridPane.columnIndex="8" GridPane.columnSpan="2" style="-fx-background-color: #9AFF99; -fx-border-color: black;-fx-font-weight: bold; -fx-border-radius: 3;"/>
              </GridPane>
          </children>
       </VBox>
